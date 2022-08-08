@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+{% block content %}
+
+    <p>Delete a company record from the database by entering the phone number of the company below:</p>
+    <form method="post">
+        {{form.hidden_tag()}}
+        {{form.number.label}}{{form.number()}}
+        {{form.submit()}}
+    </form>
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "index.html" %}
+{% block content %}
+
+    <p>Add a new company record to the database:</p>
+    <form method="post">
+        {{form.hidden_tag()}}
+        {{form.name.label}}{{form.name()}}
+        {{form.email.label}}{{form.email()}}
+        {{form.number.label}}{{form.number()}}
+        {{form.address.label}}{{form.address()}}
+        {{form.submit()}}
+    </form>
+
+{% endblock %}
